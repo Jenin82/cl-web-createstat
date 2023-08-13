@@ -3,23 +3,31 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 header {
-    background-color: #333;
+    background-color: #3498db;
     color: #fff;
     text-align: center;
     padding: 20px;
+    width: 100%;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #ecf0f1;
+    margin: 0;
 }
 
 nav li {
-    display: inline;
-    margin-right: 20px;
+    margin: 0;
+    padding: 10px 20px;
 }
 
 nav a {
@@ -28,8 +36,20 @@ nav a {
     font-weight: bold;
 }
 
+main {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 section {
-    padding: 40px;
+    flex-basis: calc(33.33% - 40px);
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #ecf0f1;
+    border-radius: 5px;
 }
 
 footer {
@@ -37,4 +57,5 @@ footer {
     padding: 20px;
     background-color: #333;
     color: #fff;
+    width: 100%;
 }
